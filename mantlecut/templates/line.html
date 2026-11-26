@@ -1,0 +1,45 @@
+<header class="heading">
+  <div><p class="eyebrow">配置线 <code>$slug</code></p><h1>$title</h1></div>
+  <a class="button" href="$path/events">审计记录</a>
+</header>
+<div class="workspace">
+  <div class="stack">
+    <section class="panel" id="revisions">
+      <div class="section-head"><h2>配置版本</h2><a href="#new-draft">新建草稿</a></div>
+      $revisions
+    </section>
+    <section class="panel" id="subscribers">
+      <div class="section-head"><h2>订阅端</h2><a href="#new-node">登记订阅端</a></div>
+      $nodes
+    </section>
+    <section class="panel" id="releases">
+      <div class="section-head"><h2>发布记录</h2></div>
+      $releases
+    </section>
+  </div>
+  <aside class="stack">
+    <section class="panel current-release">
+      <h2>发布进度</h2>
+      $active
+      <p class="steady">当前稳态 <strong>$stable</strong></p>
+    </section>
+    <details class="panel" id="new-draft" open>
+      <summary>新建草稿</summary>
+      <form method="post" action="$path/revisions" class="stack">
+        <input type="hidden" name="_token" value="$token">
+        $editor
+        <button class="primary">保存草稿</button>
+      </form>
+    </details>
+    <details class="panel" id="new-node">
+      <summary>登记订阅端</summary>
+      <form method="post" action="$path/subscribers" class="stack">
+        <input type="hidden" name="_token" value="$token">
+        <label>订阅端 ID<input name="node" pattern="[a-z][a-z0-9\-]{0,47}" required></label>
+        <label>协议代际<select name="wire"><option value="2">2 · 毫秒</option><option value="1">1 · 整数秒</option></select></label>
+        <label>标签 JSON<textarea name="tags" rows="3" spellcheck="false">{"site":"west"}</textarea></label>
+        <button class="primary">登记并生成领取密钥</button>
+      </form>
+    </details>
+  </aside>
+</div>

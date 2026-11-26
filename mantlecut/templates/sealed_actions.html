@@ -1,0 +1,14 @@
+<div class="sealed-actions stack">
+  <form method="post" action="$line/releases" class="inline">
+    <input type="hidden" name="_token" value="$token">
+    <input type="hidden" name="revision" value="$revision">
+    <label>试发比例（%）<input name="fraction" type="number" min="1" max="100" value="25" required></label>
+    <button class="primary">启动试发</button>
+  </form>
+  <form method="post" action="$line/revisions" class="inline">
+    <input type="hidden" name="_token" value="$token">
+    <input type="hidden" name="source_id" value="$revision">
+    <label class="grow">副本标题<input name="title" value="$fork" maxlength="80" required></label>
+    <button>复制草稿</button>
+  </form>
+</div>

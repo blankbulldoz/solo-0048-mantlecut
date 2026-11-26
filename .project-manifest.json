@@ -1,0 +1,422 @@
+{
+  "project_shape": "fullstack",
+  "modules": [
+    {
+      "id": "channels",
+      "path": "mantlecut/channels.py",
+      "responsibility": "管理配置线及稳态引用"
+    },
+    {
+      "id": "revisions",
+      "path": "mantlecut/revisions.py",
+      "responsibility": "草稿代数、快照封存及协议预检"
+    },
+    {
+      "id": "subscribers",
+      "path": "mantlecut/subscribers.py",
+      "responsibility": "登记身份、协议兼容及暂停取件"
+    },
+    {
+      "id": "contract",
+      "path": "mantlecut/contract.py",
+      "responsibility": "配置字段、单位和跨字段约束"
+    },
+    {
+      "id": "rules",
+      "path": "mantlecut/rules.py",
+      "responsibility": "叠层校验和有效配置合成"
+    },
+    {
+      "id": "selectors",
+      "path": "mantlecut/selectors.py",
+      "responsibility": "标签匹配、规则规范化和稳定次序"
+    },
+    {
+      "id": "wire",
+      "path": "mantlecut/wire.py",
+      "responsibility": "协议字节、摘要及制品封装"
+    },
+    {
+      "id": "rollout",
+      "path": "mantlecut/rollout.py",
+      "responsibility": "灰度状态切换与门槛"
+    },
+    {
+      "id": "cohorts",
+      "path": "mantlecut/cohorts.py",
+      "responsibility": "冻结席位和应用进度"
+    },
+    {
+      "id": "targets",
+      "path": "mantlecut/targets.py",
+      "responsibility": "按订阅端决定发布目标"
+    },
+    {
+      "id": "offers",
+      "path": "mantlecut/offers.py",
+      "responsibility": "制品领取、过期与补领"
+    },
+    {
+      "id": "receipts",
+      "path": "mantlecut/receipts.py",
+      "responsibility": "端回执校验与幂等"
+    },
+    {
+      "id": "inspection",
+      "path": "mantlecut/inspection.py",
+      "responsibility": "配置线和端状态聚合"
+    },
+    {
+      "id": "events",
+      "path": "mantlecut/events.py",
+      "responsibility": "持久事件及游标"
+    },
+    {
+      "id": "storage",
+      "path": "mantlecut/storage.py",
+      "responsibility": "SQLite 事务和状态生命周期"
+    },
+    {
+      "id": "server",
+      "path": "mantlecut/server.py",
+      "responsibility": "HTTP 路由、事务与错误响应"
+    },
+    {
+      "id": "pages",
+      "path": "mantlecut/pages.py",
+      "responsibility": "服务端 HTML 控制台"
+    },
+    {
+      "id": "forms",
+      "path": "mantlecut/forms.py",
+      "responsibility": "操作表单与控制面输入映射"
+    },
+    {
+      "id": "control_api",
+      "path": "mantlecut/control_api.py",
+      "responsibility": "控制面读写入口"
+    },
+    {
+      "id": "agent_api",
+      "path": "mantlecut/agent_api.py",
+      "responsibility": "代理领取与回执入口"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "agent-enroll",
+      "name": "登记兼容",
+      "module_ids": [
+        "control_api",
+        "subscribers",
+        "revisions",
+        "wire",
+        "targets"
+      ],
+      "entry": "登记订阅端",
+      "steps": [
+        "登记订阅端",
+        "计算其适用的版本",
+        "核对可编码性"
+      ],
+      "success": "端及协议登记成功",
+      "failure": "不能表达的有效值阻止登记",
+      "verification": "python3 -m examples.walkthrough agent-enroll"
+    },
+    {
+      "id": "draft-edit",
+      "name": "编辑草稿",
+      "module_ids": [
+        "control_api",
+        "revisions",
+        "rules",
+        "events"
+      ],
+      "entry": "获取当前代数",
+      "steps": [
+        "获取当前代数",
+        "修改基础值和规则",
+        "提交代数"
+      ],
+      "success": "新代数及审计已持久化",
+      "failure": "过期代数被拒",
+      "verification": "python3 -m examples.walkthrough draft-edit"
+    },
+    {
+      "id": "layered-preview",
+      "name": "合成预览",
+      "module_ids": [
+        "revisions",
+        "rules",
+        "selectors",
+        "contract",
+        "wire"
+      ],
+      "entry": "选定订阅端",
+      "steps": [
+        "选定订阅端",
+        "依次合成叠层",
+        "查看协议表示"
+      ],
+      "success": "预览显示最终字段与匹配顺序",
+      "failure": "非法叠层或无效有效值被拒",
+      "verification": "python3 -m examples.walkthrough layered-preview"
+    },
+    {
+      "id": "seal-check",
+      "name": "封存前预检",
+      "module_ids": [
+        "revisions",
+        "contract",
+        "wire",
+        "subscribers",
+        "events"
+      ],
+      "entry": "编辑草稿",
+      "steps": [
+        "编辑草稿",
+        "预检现有端",
+        "按原代数封存"
+      ],
+      "success": "不可变内容摘要写入",
+      "failure": "不兼容端阻止封存",
+      "verification": "python3 -m examples.walkthrough seal-check"
+    },
+    {
+      "id": "trial-roster",
+      "name": "冻结灰度席位",
+      "module_ids": [
+        "rollout",
+        "cohorts",
+        "subscribers",
+        "targets",
+        "events"
+      ],
+      "entry": "选择封存版",
+      "steps": [
+        "选择封存版",
+        "按比例试发",
+        "检查冻结名单和新登记端"
+      ],
+      "success": "名单稳定且新端留在稳态",
+      "failure": "不满足兼容条件或并行发布时拒绝",
+      "verification": "python3 -m examples.walkthrough trial-roster"
+    },
+    {
+      "id": "wire-pull",
+      "name": "按协议取件",
+      "module_ids": [
+        "agent_api",
+        "offers",
+        "targets",
+        "wire",
+        "revisions"
+      ],
+      "entry": "确定端目标",
+      "steps": [
+        "确定端目标",
+        "编码制品",
+        "用同端重领"
+      ],
+      "success": "回执前返回同一有效领取件",
+      "failure": "无目标或端暂停无待应用件",
+      "verification": "python3 -m examples.walkthrough wire-pull"
+    },
+    {
+      "id": "pause-resume",
+      "name": "暂停和恢复取件",
+      "module_ids": [
+        "subscribers",
+        "offers",
+        "targets",
+        "cohorts"
+      ],
+      "entry": "暂停在途端",
+      "steps": [
+        "暂停在途端",
+        "读取冻结席位",
+        "恢复后再领取"
+      ],
+      "success": "保留席位并可领取新凭据",
+      "failure": "旧领取件失效",
+      "verification": "python3 -m examples.walkthrough pause-resume"
+    },
+    {
+      "id": "signed-receipt",
+      "name": "签收与重送",
+      "module_ids": [
+        "agent_api",
+        "receipts",
+        "offers",
+        "targets",
+        "cohorts",
+        "events"
+      ],
+      "entry": "领取",
+      "steps": [
+        "领取",
+        "核对摘要提交结果",
+        "原样重发"
+      ],
+      "success": "仅首次改变状态和门槛",
+      "failure": "同一凭据的新结果被拒绝",
+      "verification": "python3 -m examples.walkthrough signed-receipt"
+    },
+    {
+      "id": "widen-settle",
+      "name": "扩大与切稳",
+      "module_ids": [
+        "rollout",
+        "cohorts",
+        "targets",
+        "offers",
+        "events"
+      ],
+      "entry": "让试发席位应用",
+      "steps": [
+        "让试发席位应用",
+        "扩大",
+        "收齐全员后切稳"
+      ],
+      "success": "稳态引用指向完成发布",
+      "failure": "未确认端阻止阶段推进",
+      "verification": "python3 -m examples.walkthrough widen-settle"
+    },
+    {
+      "id": "withdraw",
+      "name": "撤回与稳态补发",
+      "module_ids": [
+        "rollout",
+        "targets",
+        "offers",
+        "receipts",
+        "events"
+      ],
+      "entry": "发放候选",
+      "steps": [
+        "发放候选",
+        "撤回",
+        "检查旧回执",
+        "补领稳态"
+      ],
+      "success": "在途目标失效且可能应用的端可补领稳态",
+      "failure": "旧目标的未记回执拒绝",
+      "verification": "python3 -m examples.walkthrough withdraw"
+    },
+    {
+      "id": "expire-reject",
+      "name": "过期及应用拒绝",
+      "module_ids": [
+        "offers",
+        "receipts",
+        "cohorts",
+        "targets"
+      ],
+      "entry": "让领取跨有效期",
+      "steps": [
+        "让领取跨有效期",
+        "重新领取",
+        "提交拒绝"
+      ],
+      "success": "过期件换号且拒绝不计成功",
+      "failure": "过期件的首次回执被拒绝",
+      "verification": "python3 -m examples.walkthrough expire-reject"
+    },
+    {
+      "id": "concurrent-receipt",
+      "name": "并发持久写入",
+      "module_ids": [
+        "storage",
+        "server",
+        "receipts",
+        "offers",
+        "events"
+      ],
+      "entry": "对同一制品并发提交相同结果",
+      "steps": [
+        "对同一制品并发提交相同结果",
+        "读取审计"
+      ],
+      "success": "同一业务结果只有一条持久记录",
+      "failure": "不同结果不会覆盖已持久结果",
+      "verification": "python3 -m examples.walkthrough concurrent-receipt"
+    },
+    {
+      "id": "audit-cursor",
+      "name": "审计翻页",
+      "module_ids": [
+        "control_api",
+        "inspection",
+        "events",
+        "storage"
+      ],
+      "entry": "读第一页",
+      "steps": [
+        "读第一页",
+        "产生新事件",
+        "用旧游标翻页"
+      ],
+      "success": "已读与旧页边界可追踪",
+      "failure": "游标不合法时返回输入错误",
+      "verification": "python3 -m examples.walkthrough audit-cursor"
+    },
+    {
+      "id": "html-console",
+      "name": "网页操作",
+      "module_ids": [
+        "server",
+        "pages",
+        "forms",
+        "control_api",
+        "revisions"
+      ],
+      "entry": "取表单令牌",
+      "steps": [
+        "取表单令牌",
+        "提交草稿",
+        "打开真实发布视图"
+      ],
+      "success": "跳转结果且展示当前阶段",
+      "failure": "错误令牌被拒",
+      "verification": "python3 -m examples.walkthrough html-console"
+    },
+    {
+      "id": "reopen",
+      "name": "服务重开",
+      "module_ids": [
+        "storage",
+        "offers",
+        "receipts",
+        "targets",
+        "cohorts"
+      ],
+      "entry": "关闭有在途制品的服务",
+      "steps": [
+        "关闭有在途制品的服务",
+        "用同一库重开",
+        "完成回执"
+      ],
+      "success": "继续使用原领取件并更新门槛",
+      "failure": "带过期或目标已变的凭据无法新记",
+      "verification": "python3 -m examples.walkthrough reopen"
+    }
+  ],
+  "complexity": {
+    "mechanisms": [
+      "concurrency",
+      "delete_removal",
+      "error_propagation",
+      "export_freeze",
+      "idempotency",
+      "lineage",
+      "policy_rules",
+      "ranking_reorder",
+      "recovery_rollback",
+      "resource_lifecycle",
+      "snapshot_consistency",
+      "state_machine",
+      "time_semantics",
+      "versioning_audit"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "language": "Python 3.11+ / HTML / CSS",
+  "project_shape": "fullstack",
+  "source_extensions": [
+    ".py",
+    ".html",
+    ".css",
+    ".sql"
+  ],
+  "testing": "deferred",
+  "build_command": "python3 -m compileall -q mantlecut examples",
+  "workflow_checks": [
+    {
+      "workflow_id": "agent-enroll",
+      "command": "python3 -m examples.walkthrough agent-enroll"
+    },
+    {
+      "workflow_id": "draft-edit",
+      "command": "python3 -m examples.walkthrough draft-edit"
+    },
+    {
+      "workflow_id": "layered-preview",
+      "command": "python3 -m examples.walkthrough layered-preview"
+    },
+    {
+      "workflow_id": "seal-check",
+      "command": "python3 -m examples.walkthrough seal-check"
+    },
+    {
+      "workflow_id": "trial-roster",
+      "command": "python3 -m examples.walkthrough trial-roster"
+    },
+    {
+      "workflow_id": "wire-pull",
+      "command": "python3 -m examples.walkthrough wire-pull"
+    },
+    {
+      "workflow_id": "pause-resume",
+      "command": "python3 -m examples.walkthrough pause-resume"
+    },
+    {
+      "workflow_id": "signed-receipt",
+      "command": "python3 -m examples.walkthrough signed-receipt"
+    },
+    {
+      "workflow_id": "widen-settle",
+      "command": "python3 -m examples.walkthrough widen-settle"
+    },
+    {
+      "workflow_id": "withdraw",
+      "command": "python3 -m examples.walkthrough withdraw"
+    },
+    {
+      "workflow_id": "expire-reject",
+      "command": "python3 -m examples.walkthrough expire-reject"
+    },
+    {
+      "workflow_id": "concurrent-receipt",
+      "command": "python3 -m examples.walkthrough concurrent-receipt"
+    },
+    {
+      "workflow_id": "audit-cursor",
+      "command": "python3 -m examples.walkthrough audit-cursor"
+    },
+    {
+      "workflow_id": "html-console",
+      "command": "python3 -m examples.walkthrough html-console"
+    },
+    {
+      "workflow_id": "reopen",
+      "command": "python3 -m examples.walkthrough reopen"
+    }
+  ]
+}

@@ -1,0 +1,6903 @@
+{
+  "task_source_schema_version": 1,
+  "cc_feedback_profile": "cc-feedback-2611",
+  "project_domain": "基础设施",
+  "project_subdirection": "中间件",
+  "supported_task_types": [
+    "功能开发",
+    "功能优化",
+    "代码重构",
+    "依赖升级与迁移",
+    "质量保障",
+    "项目维护",
+    "技术讨论",
+    "问题排查与诊断",
+    "部署运维",
+    "泛Agent需求"
+  ],
+  "type_coverage": {
+    "Bugfix": {
+      "status": "no_verified_defect",
+      "reason": "基线验证未确认可复现或可证的契约缺陷"
+    },
+    "功能开发": {
+      "status": "supported",
+      "reason": "具备可复用的协议分发、端状态和版本扩展边界",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/channels.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/contract.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py",
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ]
+    },
+    "功能优化": {
+      "status": "supported",
+      "reason": "具备可迭代的灰度、取件、签收和回滚工作流",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/channels.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/contract.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py",
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ]
+    },
+    "代码重构": {
+      "status": "supported",
+      "reason": "兼容检查与取件资格具备职责拆分和保留合同的空间",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/contract.py",
+        "mantlecut/wire.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ]
+    },
+    "依赖升级与迁移": {
+      "status": "supported",
+      "reason": "双代协议和 SQLite 现有持久格式提供明确迁移对象",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/channels.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ]
+    },
+    "质量保障": {
+      "status": "supported",
+      "reason": "阶段、配置值和回执在真实入口有独立可对照的结果",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/contract.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/offers.py",
+        "mantlecut/targets.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py",
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ]
+    },
+    "项目维护": {
+      "status": "supported",
+      "reason": "跨代兼容与运维交接可建立有证据的维护规则",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/contract.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py",
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ]
+    },
+    "技术讨论": {
+      "status": "supported",
+      "reason": "目标一致性和版本证据语义均具备可定位的设计约束",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/channels.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ]
+    },
+    "问题排查与诊断": {
+      "status": "supported",
+      "reason": "审计、预览及领取记录支持重建相似表象的不同原因",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/contract.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py",
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ]
+    },
+    "部署运维": {
+      "status": "supported",
+      "reason": "持久状态和在途领取提供备份与切换场景",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/channels.py",
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ]
+    },
+    "泛Agent需求": {
+      "status": "supported",
+      "reason": "外部交接可利用可重放配置、证据与端状态",
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py",
+        "mantlecut/channels.py",
+        "mantlecut/revisions.py",
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py",
+        "mantlecut/contract.py",
+        "mantlecut/documents.py",
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py",
+        "mantlecut/targets.py",
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py",
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ]
+    }
+  },
+  "prompt_contract": {
+    "schema_version": 1,
+    "mode": "integrated",
+    "baseline_tier": "deep-task-ready",
+    "generation_scope": {
+      "mode": "all_supported"
+    },
+    "minimum_active_prompts": {
+      "功能开发": 20,
+      "功能优化": 20,
+      "代码重构": 2,
+      "依赖升级与迁移": 2,
+      "质量保障": 2,
+      "项目维护": 2,
+      "技术讨论": 2,
+      "问题排查与诊断": 2,
+      "部署运维": 2,
+      "泛Agent需求": 2
+    },
+    "minimum_anchors": {
+      "功能开发": 25,
+      "功能优化": 25,
+      "代码重构": 15,
+      "依赖升级与迁移": 15,
+      "质量保障": 15,
+      "项目维护": 15,
+      "技术讨论": 15,
+      "问题排查与诊断": 15,
+      "部署运维": 15,
+      "泛Agent需求": 15
+    },
+    "capacity_floor": {
+      "modules": 8,
+      "workflows": 10,
+      "mechanisms": 8,
+      "entities": 8,
+      "state_machines": 5,
+      "extension_seams": 12,
+      "tension_points": 10
+    }
+  },
+  "entities": [
+    {
+      "id": "channels",
+      "label": "配置线",
+      "relations": [
+        "独立持有稳态发布引用"
+      ],
+      "invariants": [
+        "各线命名空间隔离"
+      ]
+    },
+    {
+      "id": "revisions",
+      "label": "配置修订",
+      "relations": [
+        "属于配置线，可能从同线已存修订复制"
+      ],
+      "invariants": [
+        "封存后内容不可改"
+      ]
+    },
+    {
+      "id": "subscribers",
+      "label": "订阅端",
+      "relations": [
+        "属于配置线，代理身份关联协议和标签"
+      ],
+      "invariants": [
+        "密钥摘要与具体端绑定"
+      ]
+    },
+    {
+      "id": "releases",
+      "label": "发布",
+      "relations": [
+        "属于配置线，引用封存修订"
+      ],
+      "invariants": [
+        "每条线至多一项试发或扩大中发布"
+      ]
+    },
+    {
+      "id": "seats",
+      "label": "冻结席位",
+      "relations": [
+        "属于发布，引用订阅端"
+      ],
+      "invariants": [
+        "同发布内端与排名各自唯一"
+      ]
+    },
+    {
+      "id": "offers",
+      "label": "领取件",
+      "relations": [
+        "属于端，引用具体发布和协议制品"
+      ],
+      "invariants": [
+        "每端最多一个开放领取件"
+      ]
+    },
+    {
+      "id": "receipts",
+      "label": "回执",
+      "relations": [
+        "对应领取序号和摘要"
+      ],
+      "invariants": [
+        "一个领取件只能有一个持久结果"
+      ]
+    },
+    {
+      "id": "events",
+      "label": "审计事件",
+      "relations": [
+        "属于配置线，附操作事实"
+      ],
+      "invariants": [
+        "以持久事件号分页"
+      ]
+    }
+  ],
+  "state_machines": [
+    {
+      "subject": "revisions",
+      "states": [
+        "draft",
+        "sealed"
+      ],
+      "transitions": [
+        "draft->sealed"
+      ],
+      "invariants": [
+        "封存后代数不再更新"
+      ]
+    },
+    {
+      "subject": "subscribers",
+      "states": [
+        "active",
+        "paused"
+      ],
+      "transitions": [
+        "active->paused",
+        "paused->active"
+      ],
+      "invariants": [
+        "暂停不会移除冻结席位"
+      ]
+    },
+    {
+      "subject": "releases",
+      "states": [
+        "trial",
+        "wide",
+        "stable",
+        "withdrawn"
+      ],
+      "transitions": [
+        "trial->wide",
+        "wide->stable",
+        "trial->withdrawn",
+        "wide->withdrawn"
+      ],
+      "invariants": [
+        "撤回后回到原稳态选取"
+      ]
+    },
+    {
+      "subject": "seats",
+      "states": [
+        "waiting",
+        "confirmed"
+      ],
+      "transitions": [
+        "waiting->confirmed"
+      ],
+      "invariants": [
+        "实际应用成功才计数"
+      ]
+    },
+    {
+      "subject": "offers",
+      "states": [
+        "open",
+        "expired",
+        "superseded",
+        "applied",
+        "rejected"
+      ],
+      "transitions": [
+        "open->expired",
+        "open->superseded",
+        "open->applied",
+        "open->rejected"
+      ],
+      "invariants": [
+        "终态领取件不能变为另一个回执结果"
+      ]
+    }
+  ],
+  "capability_families": [
+    {
+      "family": "登记兼容",
+      "occupied_by": [
+        "agent-enroll"
+      ],
+      "available": false
+    },
+    {
+      "family": "编辑草稿",
+      "occupied_by": [
+        "draft-edit"
+      ],
+      "available": false
+    },
+    {
+      "family": "合成预览",
+      "occupied_by": [
+        "layered-preview"
+      ],
+      "available": false
+    },
+    {
+      "family": "封存前预检",
+      "occupied_by": [
+        "seal-check"
+      ],
+      "available": false
+    },
+    {
+      "family": "冻结灰度席位",
+      "occupied_by": [
+        "trial-roster"
+      ],
+      "available": false
+    },
+    {
+      "family": "按协议取件",
+      "occupied_by": [
+        "wire-pull"
+      ],
+      "available": false
+    },
+    {
+      "family": "暂停和恢复取件",
+      "occupied_by": [
+        "pause-resume"
+      ],
+      "available": false
+    },
+    {
+      "family": "签收与重送",
+      "occupied_by": [
+        "signed-receipt"
+      ],
+      "available": false
+    },
+    {
+      "family": "扩大与切稳",
+      "occupied_by": [
+        "widen-settle"
+      ],
+      "available": false
+    },
+    {
+      "family": "撤回与稳态补发",
+      "occupied_by": [
+        "withdraw"
+      ],
+      "available": false
+    },
+    {
+      "family": "过期及应用拒绝",
+      "occupied_by": [
+        "expire-reject"
+      ],
+      "available": false
+    },
+    {
+      "family": "并发持久写入",
+      "occupied_by": [
+        "concurrent-receipt"
+      ],
+      "available": false
+    },
+    {
+      "family": "审计翻页",
+      "occupied_by": [
+        "audit-cursor"
+      ],
+      "available": false
+    },
+    {
+      "family": "网页操作",
+      "occupied_by": [
+        "html-console"
+      ],
+      "available": false
+    },
+    {
+      "family": "服务重开",
+      "occupied_by": [
+        "reopen"
+      ],
+      "available": false
+    }
+  ],
+  "extension_seams": [
+    {
+      "id": "seam-01",
+      "anchor": "mantlecut/subscribers.py::_check_current_versions",
+      "entry": "登记订阅端",
+      "distinct_outcome": "登记兼容边界",
+      "mechanism": "policy_rules"
+    },
+    {
+      "id": "seam-02",
+      "anchor": "mantlecut/subscribers.py::register",
+      "entry": "登记订阅端",
+      "distinct_outcome": "代理身份边界",
+      "mechanism": "resource_lifecycle"
+    },
+    {
+      "id": "seam-03",
+      "anchor": "mantlecut/revisions.py::update",
+      "entry": "获取当前代数",
+      "distinct_outcome": "草稿编辑命令",
+      "mechanism": "versioning_audit"
+    },
+    {
+      "id": "seam-04",
+      "anchor": "mantlecut/revisions.py::create",
+      "entry": "获取当前代数",
+      "distinct_outcome": "草稿血缘",
+      "mechanism": "lineage"
+    },
+    {
+      "id": "seam-05",
+      "anchor": "mantlecut/rules.py::resolve",
+      "entry": "选定订阅端",
+      "distinct_outcome": "叠层匹配层",
+      "mechanism": "policy_rules"
+    },
+    {
+      "id": "seam-06",
+      "anchor": "mantlecut/rules.py::resolve",
+      "entry": "选定订阅端",
+      "distinct_outcome": "合并与删除",
+      "mechanism": "delete_removal"
+    },
+    {
+      "id": "seam-07",
+      "anchor": "mantlecut/selectors.py::normalize_layers",
+      "entry": "选定订阅端",
+      "distinct_outcome": "排序证据",
+      "mechanism": "ranking_reorder"
+    },
+    {
+      "id": "seam-08",
+      "anchor": "mantlecut/revisions.py::preflight",
+      "entry": "编辑草稿",
+      "distinct_outcome": "按端兼容证据",
+      "mechanism": "error_propagation"
+    },
+    {
+      "id": "seam-09",
+      "anchor": "mantlecut/revisions.py::seal",
+      "entry": "编辑草稿",
+      "distinct_outcome": "不可变制品目录",
+      "mechanism": "export_freeze"
+    },
+    {
+      "id": "seam-10",
+      "anchor": "mantlecut/rollout.py::start",
+      "entry": "选择封存版",
+      "distinct_outcome": "灰度受众生成",
+      "mechanism": "snapshot_consistency"
+    },
+    {
+      "id": "seam-11",
+      "anchor": "mantlecut/subscribers.py::register",
+      "entry": "选择封存版",
+      "distinct_outcome": "端加入政策",
+      "mechanism": "state_machine"
+    },
+    {
+      "id": "seam-12",
+      "anchor": "mantlecut/rollout.py::start",
+      "entry": "选择封存版",
+      "distinct_outcome": "发布仲裁",
+      "mechanism": "concurrency"
+    },
+    {
+      "id": "seam-13",
+      "anchor": "mantlecut/wire.py::encode",
+      "entry": "确定端目标",
+      "distinct_outcome": "设备协议适配",
+      "mechanism": "versioning_audit"
+    },
+    {
+      "id": "seam-14",
+      "anchor": "mantlecut/offers.py::pull",
+      "entry": "确定端目标",
+      "distinct_outcome": "领取协议",
+      "mechanism": "idempotency"
+    },
+    {
+      "id": "seam-15",
+      "anchor": "mantlecut/targets.py::for_node",
+      "entry": "确定端目标",
+      "distinct_outcome": "按端目标选择",
+      "mechanism": "policy_rules"
+    },
+    {
+      "id": "seam-16",
+      "anchor": "mantlecut/subscribers.py::change_pause",
+      "entry": "暂停在途端",
+      "distinct_outcome": "端暂停边界",
+      "mechanism": "state_machine"
+    },
+    {
+      "id": "seam-17",
+      "anchor": "mantlecut/cohorts.py::status",
+      "entry": "暂停在途端",
+      "distinct_outcome": "门槛与端状态",
+      "mechanism": "snapshot_consistency"
+    },
+    {
+      "id": "seam-18",
+      "anchor": "mantlecut/receipts.py::accept",
+      "entry": "领取",
+      "distinct_outcome": "回执身份验证",
+      "mechanism": "idempotency"
+    },
+    {
+      "id": "seam-19",
+      "anchor": "mantlecut/receipts.py::accept",
+      "entry": "领取",
+      "distinct_outcome": "制品确认边界",
+      "mechanism": "error_propagation"
+    },
+    {
+      "id": "seam-20",
+      "anchor": "mantlecut/rollout.py::advance",
+      "entry": "让试发席位应用",
+      "distinct_outcome": "灰度扩大决策",
+      "mechanism": "state_machine"
+    },
+    {
+      "id": "seam-21",
+      "anchor": "mantlecut/rollout.py::advance",
+      "entry": "让试发席位应用",
+      "distinct_outcome": "稳态切换",
+      "mechanism": "state_machine"
+    },
+    {
+      "id": "seam-22",
+      "anchor": "mantlecut/rollout.py::advance",
+      "entry": "发放候选",
+      "distinct_outcome": "撤回补偿",
+      "mechanism": "recovery_rollback"
+    },
+    {
+      "id": "seam-23",
+      "anchor": "mantlecut/receipts.py::accept",
+      "entry": "发放候选",
+      "distinct_outcome": "回执撤回隔离",
+      "mechanism": "recovery_rollback"
+    },
+    {
+      "id": "seam-24",
+      "anchor": "mantlecut/offers.py::pull",
+      "entry": "让领取跨有效期",
+      "distinct_outcome": "领取有效期",
+      "mechanism": "time_semantics"
+    },
+    {
+      "id": "seam-25",
+      "anchor": "mantlecut/receipts.py::accept",
+      "entry": "让领取跨有效期",
+      "distinct_outcome": "拒绝处置",
+      "mechanism": "error_propagation"
+    },
+    {
+      "id": "seam-26",
+      "anchor": "mantlecut/receipts.py::accept",
+      "entry": "对同一制品并发提交相同结果",
+      "distinct_outcome": "并发回执持久写入",
+      "mechanism": "concurrency"
+    },
+    {
+      "id": "seam-27",
+      "anchor": "mantlecut/events.py::list_events",
+      "entry": "读第一页",
+      "distinct_outcome": "审计查询面",
+      "mechanism": "versioning_audit"
+    },
+    {
+      "id": "seam-28",
+      "anchor": "mantlecut/forms.py::to_control",
+      "entry": "取表单令牌",
+      "distinct_outcome": "双入口转换",
+      "mechanism": "error_propagation"
+    },
+    {
+      "id": "seam-29",
+      "anchor": "mantlecut/offers.py::pull",
+      "entry": "关闭有在途制品的服务",
+      "distinct_outcome": "可恢复持久状态",
+      "mechanism": "recovery_rollback"
+    }
+  ],
+  "tension_points": [
+    {
+      "workflow_id": "agent-enroll",
+      "description": "端及协议登记成功，同时遵守该入口的拒绝条件",
+      "observable_failure": "不能表达的有效值阻止登记"
+    },
+    {
+      "workflow_id": "draft-edit",
+      "description": "新代数及审计已持久化，同时遵守该入口的拒绝条件",
+      "observable_failure": "过期代数被拒"
+    },
+    {
+      "workflow_id": "layered-preview",
+      "description": "预览显示最终字段与匹配顺序，同时遵守该入口的拒绝条件",
+      "observable_failure": "非法叠层或无效有效值被拒"
+    },
+    {
+      "workflow_id": "seal-check",
+      "description": "不可变内容摘要写入，同时遵守该入口的拒绝条件",
+      "observable_failure": "不兼容端阻止封存"
+    },
+    {
+      "workflow_id": "trial-roster",
+      "description": "名单稳定且新端留在稳态，同时遵守该入口的拒绝条件",
+      "observable_failure": "不满足兼容条件或并行发布时拒绝"
+    },
+    {
+      "workflow_id": "wire-pull",
+      "description": "回执前返回同一有效领取件，同时遵守该入口的拒绝条件",
+      "observable_failure": "无目标或端暂停无待应用件"
+    },
+    {
+      "workflow_id": "pause-resume",
+      "description": "保留席位并可领取新凭据，同时遵守该入口的拒绝条件",
+      "observable_failure": "旧领取件失效"
+    },
+    {
+      "workflow_id": "signed-receipt",
+      "description": "仅首次改变状态和门槛，同时遵守该入口的拒绝条件",
+      "observable_failure": "同一凭据的新结果被拒绝"
+    },
+    {
+      "workflow_id": "widen-settle",
+      "description": "稳态引用指向完成发布，同时遵守该入口的拒绝条件",
+      "observable_failure": "未确认端阻止阶段推进"
+    },
+    {
+      "workflow_id": "withdraw",
+      "description": "在途目标失效且可能应用的端可补领稳态，同时遵守该入口的拒绝条件",
+      "observable_failure": "旧目标的未记回执拒绝"
+    },
+    {
+      "workflow_id": "expire-reject",
+      "description": "过期件换号且拒绝不计成功，同时遵守该入口的拒绝条件",
+      "observable_failure": "过期件的首次回执被拒绝"
+    },
+    {
+      "workflow_id": "concurrent-receipt",
+      "description": "同一业务结果只有一条持久记录，同时遵守该入口的拒绝条件",
+      "observable_failure": "不同结果不会覆盖已持久结果"
+    },
+    {
+      "workflow_id": "audit-cursor",
+      "description": "已读与旧页边界可追踪，同时遵守该入口的拒绝条件",
+      "observable_failure": "游标不合法时返回输入错误"
+    },
+    {
+      "workflow_id": "html-console",
+      "description": "跳转结果且展示当前阶段，同时遵守该入口的拒绝条件",
+      "observable_failure": "错误令牌被拒"
+    },
+    {
+      "workflow_id": "reopen",
+      "description": "继续使用原领取件并更新门槛，同时遵守该入口的拒绝条件",
+      "observable_failure": "带过期或目标已变的凭据无法新记"
+    }
+  ],
+  "prompt_anchors": [
+    {
+      "id": "01-01",
+      "task_type": "功能开发",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      },
+      "extension_seam_id": "seam-01"
+    },
+    {
+      "id": "01-02",
+      "task_type": "功能开发",
+      "capability_family": "登记兼容",
+      "subject": "端身份",
+      "state": "首次登记",
+      "invariant": "端名称只在配置线内唯一",
+      "observable": "新登记返回专属领取密钥",
+      "primary_mechanism": "resource_lifecycle",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/channels.py"
+        ],
+        "functions": [
+          "register",
+          "get"
+        ]
+      },
+      "extension_seam_id": "seam-02"
+    },
+    {
+      "id": "01-03",
+      "task_type": "功能开发",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      },
+      "extension_seam_id": "seam-03"
+    },
+    {
+      "id": "01-04",
+      "task_type": "功能开发",
+      "capability_family": "编辑草稿",
+      "subject": "复制来源",
+      "state": "创建分支草稿",
+      "invariant": "来源在同条配置线内",
+      "observable": "草稿保有来源版引用",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "create",
+          "get"
+        ]
+      },
+      "extension_seam_id": "seam-04"
+    },
+    {
+      "id": "01-05",
+      "task_type": "功能开发",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      },
+      "extension_seam_id": "seam-05"
+    },
+    {
+      "id": "01-06",
+      "task_type": "功能开发",
+      "capability_family": "合成预览",
+      "subject": "叠层可选字段",
+      "state": "删除后重设",
+      "invariant": "最终按层次合并结果校验",
+      "observable": "前置可选值不会错误保留",
+      "primary_mechanism": "delete_removal",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/contract.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/contract.py"
+        ],
+        "functions": [
+          "resolve",
+          "enforce"
+        ]
+      },
+      "extension_seam_id": "seam-06"
+    },
+    {
+      "id": "01-07",
+      "task_type": "功能开发",
+      "capability_family": "合成预览",
+      "subject": "叠层优先序",
+      "state": "叠层归并",
+      "invariant": "不同优先序始终按升序处理",
+      "observable": "预览返回固定命中序列",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/selectors.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/selectors.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "normalize_layers",
+          "preview"
+        ]
+      },
+      "extension_seam_id": "seam-07"
+    },
+    {
+      "id": "01-08",
+      "task_type": "功能开发",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      },
+      "extension_seam_id": "seam-08"
+    },
+    {
+      "id": "01-09",
+      "task_type": "功能开发",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      },
+      "extension_seam_id": "seam-09"
+    },
+    {
+      "id": "01-10",
+      "task_type": "功能开发",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      },
+      "extension_seam_id": "seam-10"
+    },
+    {
+      "id": "01-11",
+      "task_type": "功能开发",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      },
+      "extension_seam_id": "seam-11"
+    },
+    {
+      "id": "01-12",
+      "task_type": "功能开发",
+      "capability_family": "冻结灰度席位",
+      "subject": "活动发布",
+      "state": "重复启动",
+      "invariant": "同一配置线最多一个活动发布",
+      "observable": "后到启动请求冲突",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "start",
+          "active"
+        ]
+      },
+      "extension_seam_id": "seam-12"
+    },
+    {
+      "id": "01-13",
+      "task_type": "功能开发",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      },
+      "extension_seam_id": "seam-13"
+    },
+    {
+      "id": "01-14",
+      "task_type": "功能开发",
+      "capability_family": "按协议取件",
+      "subject": "有效领取件",
+      "state": "未应用时重拉",
+      "invariant": "仍有效且目标一致就复用当前领取件",
+      "observable": "返回固定序号、内容和截止点",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "pull",
+          "_envelope"
+        ]
+      },
+      "extension_seam_id": "seam-14"
+    },
+    {
+      "id": "01-15",
+      "task_type": "功能开发",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      },
+      "extension_seam_id": "seam-15"
+    },
+    {
+      "id": "01-16",
+      "task_type": "功能开发",
+      "capability_family": "暂停和恢复取件",
+      "subject": "暂停端",
+      "state": "暂停期间",
+      "invariant": "既不签收未完成凭据也不新增领取",
+      "observable": "端从可领到暂停",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "change_pause",
+          "pull"
+        ]
+      },
+      "extension_seam_id": "seam-16"
+    },
+    {
+      "id": "01-17",
+      "task_type": "功能开发",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      },
+      "extension_seam_id": "seam-17"
+    },
+    {
+      "id": "01-18",
+      "task_type": "功能开发",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      },
+      "extension_seam_id": "seam-18"
+    },
+    {
+      "id": "01-19",
+      "task_type": "功能开发",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      },
+      "extension_seam_id": "seam-19"
+    },
+    {
+      "id": "01-20",
+      "task_type": "功能开发",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      },
+      "extension_seam_id": "seam-20"
+    },
+    {
+      "id": "01-21",
+      "task_type": "功能开发",
+      "capability_family": "扩大与切稳",
+      "subject": "全量发布",
+      "state": "切稳前",
+      "invariant": "扩大期间仍需冻结全员确认",
+      "observable": "切稳后端可见稳定目标",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "advance",
+          "for_node"
+        ]
+      },
+      "extension_seam_id": "seam-21"
+    },
+    {
+      "id": "01-22",
+      "task_type": "功能开发",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      },
+      "extension_seam_id": "seam-22"
+    },
+    {
+      "id": "01-23",
+      "task_type": "功能开发",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      },
+      "extension_seam_id": "seam-23"
+    },
+    {
+      "id": "01-24",
+      "task_type": "功能开发",
+      "capability_family": "过期及应用拒绝",
+      "subject": "在途制品",
+      "state": "超过有效期",
+      "invariant": "新记回执必须在期限内",
+      "observable": "过期重领返回另一个序号",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      },
+      "extension_seam_id": "seam-24"
+    },
+    {
+      "id": "01-25",
+      "task_type": "功能开发",
+      "capability_family": "过期及应用拒绝",
+      "subject": "拒绝回执",
+      "state": "协议端报告拒绝",
+      "invariant": "保留拒绝原因且不算成功应用",
+      "observable": "发布阻挡持续显示",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "accept",
+          "status"
+        ]
+      },
+      "extension_seam_id": "seam-25"
+    },
+    {
+      "id": "01-26",
+      "task_type": "功能开发",
+      "capability_family": "并发持久写入",
+      "subject": "同一领取件",
+      "state": "并发确认",
+      "invariant": "回执主键不能双记",
+      "observable": "审计成功事件数不重复",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "concurrent-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/events.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/events.py"
+        ],
+        "functions": [
+          "accept",
+          "record"
+        ]
+      },
+      "extension_seam_id": "seam-26"
+    },
+    {
+      "id": "01-27",
+      "task_type": "功能开发",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      },
+      "extension_seam_id": "seam-27"
+    },
+    {
+      "id": "01-28",
+      "task_type": "功能开发",
+      "capability_family": "网页操作",
+      "subject": "草稿表单",
+      "state": "浏览器提交",
+      "invariant": "表单与控制面共享业务约束",
+      "observable": "提交后的页面显示实际草稿",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "html-console"
+      ],
+      "source_anchors": [
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/forms.py",
+          "mantlecut/pages.py"
+        ],
+        "functions": [
+          "to_control",
+          "form_result"
+        ]
+      },
+      "extension_seam_id": "seam-28"
+    },
+    {
+      "id": "01-29",
+      "task_type": "功能开发",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      },
+      "extension_seam_id": "seam-29"
+    },
+    {
+      "id": "02-01",
+      "task_type": "功能优化",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "02-02",
+      "task_type": "功能优化",
+      "capability_family": "登记兼容",
+      "subject": "端身份",
+      "state": "首次登记",
+      "invariant": "端名称只在配置线内唯一",
+      "observable": "新登记返回专属领取密钥",
+      "primary_mechanism": "resource_lifecycle",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/channels.py"
+        ],
+        "functions": [
+          "register",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "02-03",
+      "task_type": "功能优化",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "02-04",
+      "task_type": "功能优化",
+      "capability_family": "编辑草稿",
+      "subject": "复制来源",
+      "state": "创建分支草稿",
+      "invariant": "来源在同条配置线内",
+      "observable": "草稿保有来源版引用",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "create",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "02-05",
+      "task_type": "功能优化",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      }
+    },
+    {
+      "id": "02-06",
+      "task_type": "功能优化",
+      "capability_family": "合成预览",
+      "subject": "叠层可选字段",
+      "state": "删除后重设",
+      "invariant": "最终按层次合并结果校验",
+      "observable": "前置可选值不会错误保留",
+      "primary_mechanism": "delete_removal",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/contract.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/contract.py"
+        ],
+        "functions": [
+          "resolve",
+          "enforce"
+        ]
+      }
+    },
+    {
+      "id": "02-07",
+      "task_type": "功能优化",
+      "capability_family": "合成预览",
+      "subject": "叠层优先序",
+      "state": "叠层归并",
+      "invariant": "不同优先序始终按升序处理",
+      "observable": "预览返回固定命中序列",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/selectors.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/selectors.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "normalize_layers",
+          "preview"
+        ]
+      }
+    },
+    {
+      "id": "02-08",
+      "task_type": "功能优化",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "02-09",
+      "task_type": "功能优化",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "02-10",
+      "task_type": "功能优化",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "02-11",
+      "task_type": "功能优化",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "02-12",
+      "task_type": "功能优化",
+      "capability_family": "冻结灰度席位",
+      "subject": "活动发布",
+      "state": "重复启动",
+      "invariant": "同一配置线最多一个活动发布",
+      "observable": "后到启动请求冲突",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "start",
+          "active"
+        ]
+      }
+    },
+    {
+      "id": "02-13",
+      "task_type": "功能优化",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "02-14",
+      "task_type": "功能优化",
+      "capability_family": "按协议取件",
+      "subject": "有效领取件",
+      "state": "未应用时重拉",
+      "invariant": "仍有效且目标一致就复用当前领取件",
+      "observable": "返回固定序号、内容和截止点",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "pull",
+          "_envelope"
+        ]
+      }
+    },
+    {
+      "id": "02-15",
+      "task_type": "功能优化",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "02-16",
+      "task_type": "功能优化",
+      "capability_family": "暂停和恢复取件",
+      "subject": "暂停端",
+      "state": "暂停期间",
+      "invariant": "既不签收未完成凭据也不新增领取",
+      "observable": "端从可领到暂停",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "change_pause",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "02-17",
+      "task_type": "功能优化",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      }
+    },
+    {
+      "id": "02-18",
+      "task_type": "功能优化",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "02-19",
+      "task_type": "功能优化",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "02-20",
+      "task_type": "功能优化",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "02-21",
+      "task_type": "功能优化",
+      "capability_family": "扩大与切稳",
+      "subject": "全量发布",
+      "state": "切稳前",
+      "invariant": "扩大期间仍需冻结全员确认",
+      "observable": "切稳后端可见稳定目标",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "advance",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "02-22",
+      "task_type": "功能优化",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "02-23",
+      "task_type": "功能优化",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "02-24",
+      "task_type": "功能优化",
+      "capability_family": "过期及应用拒绝",
+      "subject": "在途制品",
+      "state": "超过有效期",
+      "invariant": "新记回执必须在期限内",
+      "observable": "过期重领返回另一个序号",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "02-25",
+      "task_type": "功能优化",
+      "capability_family": "过期及应用拒绝",
+      "subject": "拒绝回执",
+      "state": "协议端报告拒绝",
+      "invariant": "保留拒绝原因且不算成功应用",
+      "observable": "发布阻挡持续显示",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "accept",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "02-26",
+      "task_type": "功能优化",
+      "capability_family": "并发持久写入",
+      "subject": "同一领取件",
+      "state": "并发确认",
+      "invariant": "回执主键不能双记",
+      "observable": "审计成功事件数不重复",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "concurrent-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/events.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/events.py"
+        ],
+        "functions": [
+          "accept",
+          "record"
+        ]
+      }
+    },
+    {
+      "id": "02-27",
+      "task_type": "功能优化",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "02-28",
+      "task_type": "功能优化",
+      "capability_family": "网页操作",
+      "subject": "草稿表单",
+      "state": "浏览器提交",
+      "invariant": "表单与控制面共享业务约束",
+      "observable": "提交后的页面显示实际草稿",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "html-console"
+      ],
+      "source_anchors": [
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/forms.py",
+          "mantlecut/pages.py"
+        ],
+        "functions": [
+          "to_control",
+          "form_result"
+        ]
+      }
+    },
+    {
+      "id": "02-29",
+      "task_type": "功能优化",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "03-02",
+      "task_type": "代码重构",
+      "capability_family": "登记兼容",
+      "subject": "端身份",
+      "state": "首次登记",
+      "invariant": "端名称只在配置线内唯一",
+      "observable": "新登记返回专属领取密钥",
+      "primary_mechanism": "resource_lifecycle",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/channels.py"
+        ],
+        "functions": [
+          "register",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "03-03",
+      "task_type": "代码重构",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "03-05",
+      "task_type": "代码重构",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      }
+    },
+    {
+      "id": "03-06",
+      "task_type": "代码重构",
+      "capability_family": "合成预览",
+      "subject": "叠层可选字段",
+      "state": "删除后重设",
+      "invariant": "最终按层次合并结果校验",
+      "observable": "前置可选值不会错误保留",
+      "primary_mechanism": "delete_removal",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/contract.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/contract.py"
+        ],
+        "functions": [
+          "resolve",
+          "enforce"
+        ]
+      }
+    },
+    {
+      "id": "03-07",
+      "task_type": "代码重构",
+      "capability_family": "合成预览",
+      "subject": "叠层优先序",
+      "state": "叠层归并",
+      "invariant": "不同优先序始终按升序处理",
+      "observable": "预览返回固定命中序列",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/selectors.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/selectors.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "normalize_layers",
+          "preview"
+        ]
+      }
+    },
+    {
+      "id": "03-08",
+      "task_type": "代码重构",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "03-09",
+      "task_type": "代码重构",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "03-10",
+      "task_type": "代码重构",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "03-12",
+      "task_type": "代码重构",
+      "capability_family": "冻结灰度席位",
+      "subject": "活动发布",
+      "state": "重复启动",
+      "invariant": "同一配置线最多一个活动发布",
+      "observable": "后到启动请求冲突",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "start",
+          "active"
+        ]
+      }
+    },
+    {
+      "id": "03-13",
+      "task_type": "代码重构",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "03-14",
+      "task_type": "代码重构",
+      "capability_family": "按协议取件",
+      "subject": "有效领取件",
+      "state": "未应用时重拉",
+      "invariant": "仍有效且目标一致就复用当前领取件",
+      "observable": "返回固定序号、内容和截止点",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "pull",
+          "_envelope"
+        ]
+      }
+    },
+    {
+      "id": "03-15",
+      "task_type": "代码重构",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "03-17",
+      "task_type": "代码重构",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      }
+    },
+    {
+      "id": "03-18",
+      "task_type": "代码重构",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "03-19",
+      "task_type": "代码重构",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "03-23",
+      "task_type": "代码重构",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "03-26",
+      "task_type": "代码重构",
+      "capability_family": "并发持久写入",
+      "subject": "同一领取件",
+      "state": "并发确认",
+      "invariant": "回执主键不能双记",
+      "observable": "审计成功事件数不重复",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "concurrent-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/events.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/events.py"
+        ],
+        "functions": [
+          "accept",
+          "record"
+        ]
+      }
+    },
+    {
+      "id": "03-28",
+      "task_type": "代码重构",
+      "capability_family": "网页操作",
+      "subject": "草稿表单",
+      "state": "浏览器提交",
+      "invariant": "表单与控制面共享业务约束",
+      "observable": "提交后的页面显示实际草稿",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "html-console"
+      ],
+      "source_anchors": [
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/forms.py",
+          "mantlecut/pages.py"
+        ],
+        "functions": [
+          "to_control",
+          "form_result"
+        ]
+      }
+    },
+    {
+      "id": "03-29",
+      "task_type": "代码重构",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "04-01",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "04-02",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "登记兼容",
+      "subject": "端身份",
+      "state": "首次登记",
+      "invariant": "端名称只在配置线内唯一",
+      "observable": "新登记返回专属领取密钥",
+      "primary_mechanism": "resource_lifecycle",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/channels.py"
+        ],
+        "functions": [
+          "register",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "04-03",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "04-04",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "编辑草稿",
+      "subject": "复制来源",
+      "state": "创建分支草稿",
+      "invariant": "来源在同条配置线内",
+      "observable": "草稿保有来源版引用",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "create",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "04-05",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      }
+    },
+    {
+      "id": "04-08",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "04-09",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "04-11",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "04-13",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "04-14",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "按协议取件",
+      "subject": "有效领取件",
+      "state": "未应用时重拉",
+      "invariant": "仍有效且目标一致就复用当前领取件",
+      "observable": "返回固定序号、内容和截止点",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "pull",
+          "_envelope"
+        ]
+      }
+    },
+    {
+      "id": "04-18",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "04-19",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "04-23",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "04-24",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "过期及应用拒绝",
+      "subject": "在途制品",
+      "state": "超过有效期",
+      "invariant": "新记回执必须在期限内",
+      "observable": "过期重领返回另一个序号",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "04-26",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "并发持久写入",
+      "subject": "同一领取件",
+      "state": "并发确认",
+      "invariant": "回执主键不能双记",
+      "observable": "审计成功事件数不重复",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "concurrent-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/events.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/events.py"
+        ],
+        "functions": [
+          "accept",
+          "record"
+        ]
+      }
+    },
+    {
+      "id": "04-27",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "04-29",
+      "task_type": "依赖升级与迁移",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "05-01",
+      "task_type": "质量保障",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "05-03",
+      "task_type": "质量保障",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "05-05",
+      "task_type": "质量保障",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      }
+    },
+    {
+      "id": "05-06",
+      "task_type": "质量保障",
+      "capability_family": "合成预览",
+      "subject": "叠层可选字段",
+      "state": "删除后重设",
+      "invariant": "最终按层次合并结果校验",
+      "observable": "前置可选值不会错误保留",
+      "primary_mechanism": "delete_removal",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/contract.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/contract.py"
+        ],
+        "functions": [
+          "resolve",
+          "enforce"
+        ]
+      }
+    },
+    {
+      "id": "05-07",
+      "task_type": "质量保障",
+      "capability_family": "合成预览",
+      "subject": "叠层优先序",
+      "state": "叠层归并",
+      "invariant": "不同优先序始终按升序处理",
+      "observable": "预览返回固定命中序列",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/selectors.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/selectors.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "normalize_layers",
+          "preview"
+        ]
+      }
+    },
+    {
+      "id": "05-08",
+      "task_type": "质量保障",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "05-09",
+      "task_type": "质量保障",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "05-10",
+      "task_type": "质量保障",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "05-13",
+      "task_type": "质量保障",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "05-15",
+      "task_type": "质量保障",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "05-18",
+      "task_type": "质量保障",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "05-19",
+      "task_type": "质量保障",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "05-20",
+      "task_type": "质量保障",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "05-21",
+      "task_type": "质量保障",
+      "capability_family": "扩大与切稳",
+      "subject": "全量发布",
+      "state": "切稳前",
+      "invariant": "扩大期间仍需冻结全员确认",
+      "observable": "切稳后端可见稳定目标",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "advance",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "05-22",
+      "task_type": "质量保障",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "05-23",
+      "task_type": "质量保障",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "05-24",
+      "task_type": "质量保障",
+      "capability_family": "过期及应用拒绝",
+      "subject": "在途制品",
+      "state": "超过有效期",
+      "invariant": "新记回执必须在期限内",
+      "observable": "过期重领返回另一个序号",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "05-25",
+      "task_type": "质量保障",
+      "capability_family": "过期及应用拒绝",
+      "subject": "拒绝回执",
+      "state": "协议端报告拒绝",
+      "invariant": "保留拒绝原因且不算成功应用",
+      "observable": "发布阻挡持续显示",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "accept",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "05-26",
+      "task_type": "质量保障",
+      "capability_family": "并发持久写入",
+      "subject": "同一领取件",
+      "state": "并发确认",
+      "invariant": "回执主键不能双记",
+      "observable": "审计成功事件数不重复",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "concurrent-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/events.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/events.py"
+        ],
+        "functions": [
+          "accept",
+          "record"
+        ]
+      }
+    },
+    {
+      "id": "05-27",
+      "task_type": "质量保障",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "05-28",
+      "task_type": "质量保障",
+      "capability_family": "网页操作",
+      "subject": "草稿表单",
+      "state": "浏览器提交",
+      "invariant": "表单与控制面共享业务约束",
+      "observable": "提交后的页面显示实际草稿",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "html-console"
+      ],
+      "source_anchors": [
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/forms.py",
+          "mantlecut/pages.py"
+        ],
+        "functions": [
+          "to_control",
+          "form_result"
+        ]
+      }
+    },
+    {
+      "id": "05-29",
+      "task_type": "质量保障",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "06-01",
+      "task_type": "项目维护",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "06-03",
+      "task_type": "项目维护",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "06-04",
+      "task_type": "项目维护",
+      "capability_family": "编辑草稿",
+      "subject": "复制来源",
+      "state": "创建分支草稿",
+      "invariant": "来源在同条配置线内",
+      "observable": "草稿保有来源版引用",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "create",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "06-05",
+      "task_type": "项目维护",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      }
+    },
+    {
+      "id": "06-06",
+      "task_type": "项目维护",
+      "capability_family": "合成预览",
+      "subject": "叠层可选字段",
+      "state": "删除后重设",
+      "invariant": "最终按层次合并结果校验",
+      "observable": "前置可选值不会错误保留",
+      "primary_mechanism": "delete_removal",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/contract.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/contract.py"
+        ],
+        "functions": [
+          "resolve",
+          "enforce"
+        ]
+      }
+    },
+    {
+      "id": "06-08",
+      "task_type": "项目维护",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "06-09",
+      "task_type": "项目维护",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "06-10",
+      "task_type": "项目维护",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "06-11",
+      "task_type": "项目维护",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "06-13",
+      "task_type": "项目维护",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "06-15",
+      "task_type": "项目维护",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "06-17",
+      "task_type": "项目维护",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      }
+    },
+    {
+      "id": "06-18",
+      "task_type": "项目维护",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "06-20",
+      "task_type": "项目维护",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "06-21",
+      "task_type": "项目维护",
+      "capability_family": "扩大与切稳",
+      "subject": "全量发布",
+      "state": "切稳前",
+      "invariant": "扩大期间仍需冻结全员确认",
+      "observable": "切稳后端可见稳定目标",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "advance",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "06-22",
+      "task_type": "项目维护",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "06-23",
+      "task_type": "项目维护",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "06-25",
+      "task_type": "项目维护",
+      "capability_family": "过期及应用拒绝",
+      "subject": "拒绝回执",
+      "state": "协议端报告拒绝",
+      "invariant": "保留拒绝原因且不算成功应用",
+      "observable": "发布阻挡持续显示",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "accept",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "06-27",
+      "task_type": "项目维护",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "06-28",
+      "task_type": "项目维护",
+      "capability_family": "网页操作",
+      "subject": "草稿表单",
+      "state": "浏览器提交",
+      "invariant": "表单与控制面共享业务约束",
+      "observable": "提交后的页面显示实际草稿",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "html-console"
+      ],
+      "source_anchors": [
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/forms.py",
+          "mantlecut/pages.py"
+        ],
+        "functions": [
+          "to_control",
+          "form_result"
+        ]
+      }
+    },
+    {
+      "id": "06-29",
+      "task_type": "项目维护",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "07-01",
+      "task_type": "技术讨论",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "07-02",
+      "task_type": "技术讨论",
+      "capability_family": "登记兼容",
+      "subject": "端身份",
+      "state": "首次登记",
+      "invariant": "端名称只在配置线内唯一",
+      "observable": "新登记返回专属领取密钥",
+      "primary_mechanism": "resource_lifecycle",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/channels.py"
+        ],
+        "functions": [
+          "register",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "07-04",
+      "task_type": "技术讨论",
+      "capability_family": "编辑草稿",
+      "subject": "复制来源",
+      "state": "创建分支草稿",
+      "invariant": "来源在同条配置线内",
+      "observable": "草稿保有来源版引用",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "create",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "07-08",
+      "task_type": "技术讨论",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "07-09",
+      "task_type": "技术讨论",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "07-10",
+      "task_type": "技术讨论",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "07-11",
+      "task_type": "技术讨论",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "07-12",
+      "task_type": "技术讨论",
+      "capability_family": "冻结灰度席位",
+      "subject": "活动发布",
+      "state": "重复启动",
+      "invariant": "同一配置线最多一个活动发布",
+      "observable": "后到启动请求冲突",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "start",
+          "active"
+        ]
+      }
+    },
+    {
+      "id": "07-13",
+      "task_type": "技术讨论",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "07-14",
+      "task_type": "技术讨论",
+      "capability_family": "按协议取件",
+      "subject": "有效领取件",
+      "state": "未应用时重拉",
+      "invariant": "仍有效且目标一致就复用当前领取件",
+      "observable": "返回固定序号、内容和截止点",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "pull",
+          "_envelope"
+        ]
+      }
+    },
+    {
+      "id": "07-15",
+      "task_type": "技术讨论",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "07-17",
+      "task_type": "技术讨论",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      }
+    },
+    {
+      "id": "07-18",
+      "task_type": "技术讨论",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "07-19",
+      "task_type": "技术讨论",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "07-20",
+      "task_type": "技术讨论",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "07-21",
+      "task_type": "技术讨论",
+      "capability_family": "扩大与切稳",
+      "subject": "全量发布",
+      "state": "切稳前",
+      "invariant": "扩大期间仍需冻结全员确认",
+      "observable": "切稳后端可见稳定目标",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "advance",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "07-22",
+      "task_type": "技术讨论",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "07-23",
+      "task_type": "技术讨论",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "07-26",
+      "task_type": "技术讨论",
+      "capability_family": "并发持久写入",
+      "subject": "同一领取件",
+      "state": "并发确认",
+      "invariant": "回执主键不能双记",
+      "observable": "审计成功事件数不重复",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "concurrent-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/events.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/events.py"
+        ],
+        "functions": [
+          "accept",
+          "record"
+        ]
+      }
+    },
+    {
+      "id": "07-27",
+      "task_type": "技术讨论",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "07-29",
+      "task_type": "技术讨论",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "08-01",
+      "task_type": "问题排查与诊断",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "08-03",
+      "task_type": "问题排查与诊断",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "08-05",
+      "task_type": "问题排查与诊断",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      }
+    },
+    {
+      "id": "08-06",
+      "task_type": "问题排查与诊断",
+      "capability_family": "合成预览",
+      "subject": "叠层可选字段",
+      "state": "删除后重设",
+      "invariant": "最终按层次合并结果校验",
+      "observable": "前置可选值不会错误保留",
+      "primary_mechanism": "delete_removal",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/contract.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/contract.py"
+        ],
+        "functions": [
+          "resolve",
+          "enforce"
+        ]
+      }
+    },
+    {
+      "id": "08-07",
+      "task_type": "问题排查与诊断",
+      "capability_family": "合成预览",
+      "subject": "叠层优先序",
+      "state": "叠层归并",
+      "invariant": "不同优先序始终按升序处理",
+      "observable": "预览返回固定命中序列",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/selectors.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/selectors.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "normalize_layers",
+          "preview"
+        ]
+      }
+    },
+    {
+      "id": "08-08",
+      "task_type": "问题排查与诊断",
+      "capability_family": "封存前预检",
+      "subject": "旧协议端",
+      "state": "封存预检",
+      "invariant": "整秒限制在实际合成值后生效",
+      "observable": "具体订阅端的协议问题可见",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "preflight",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "08-10",
+      "task_type": "问题排查与诊断",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "08-11",
+      "task_type": "问题排查与诊断",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "08-13",
+      "task_type": "问题排查与诊断",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "08-15",
+      "task_type": "问题排查与诊断",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "08-16",
+      "task_type": "问题排查与诊断",
+      "capability_family": "暂停和恢复取件",
+      "subject": "暂停端",
+      "state": "暂停期间",
+      "invariant": "既不签收未完成凭据也不新增领取",
+      "observable": "端从可领到暂停",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "change_pause",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "08-17",
+      "task_type": "问题排查与诊断",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      }
+    },
+    {
+      "id": "08-18",
+      "task_type": "问题排查与诊断",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "08-19",
+      "task_type": "问题排查与诊断",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "08-20",
+      "task_type": "问题排查与诊断",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "08-22",
+      "task_type": "问题排查与诊断",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "08-23",
+      "task_type": "问题排查与诊断",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "08-24",
+      "task_type": "问题排查与诊断",
+      "capability_family": "过期及应用拒绝",
+      "subject": "在途制品",
+      "state": "超过有效期",
+      "invariant": "新记回执必须在期限内",
+      "observable": "过期重领返回另一个序号",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "08-25",
+      "task_type": "问题排查与诊断",
+      "capability_family": "过期及应用拒绝",
+      "subject": "拒绝回执",
+      "state": "协议端报告拒绝",
+      "invariant": "保留拒绝原因且不算成功应用",
+      "observable": "发布阻挡持续显示",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "accept",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "08-27",
+      "task_type": "问题排查与诊断",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "08-28",
+      "task_type": "问题排查与诊断",
+      "capability_family": "网页操作",
+      "subject": "草稿表单",
+      "state": "浏览器提交",
+      "invariant": "表单与控制面共享业务约束",
+      "observable": "提交后的页面显示实际草稿",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "html-console"
+      ],
+      "source_anchors": [
+        "mantlecut/forms.py",
+        "mantlecut/pages.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/forms.py",
+          "mantlecut/pages.py"
+        ],
+        "functions": [
+          "to_control",
+          "form_result"
+        ]
+      }
+    },
+    {
+      "id": "08-29",
+      "task_type": "问题排查与诊断",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "09-01",
+      "task_type": "部署运维",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "09-02",
+      "task_type": "部署运维",
+      "capability_family": "登记兼容",
+      "subject": "端身份",
+      "state": "首次登记",
+      "invariant": "端名称只在配置线内唯一",
+      "observable": "新登记返回专属领取密钥",
+      "primary_mechanism": "resource_lifecycle",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/channels.py"
+        ],
+        "functions": [
+          "register",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "09-03",
+      "task_type": "部署运维",
+      "capability_family": "编辑草稿",
+      "subject": "草稿代数",
+      "state": "并行提交",
+      "invariant": "后提交不得覆盖不同代数的新内容",
+      "observable": "过时代数返回冲突",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "update",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "09-09",
+      "task_type": "部署运维",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "09-10",
+      "task_type": "部署运维",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "09-11",
+      "task_type": "部署运维",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "09-12",
+      "task_type": "部署运维",
+      "capability_family": "冻结灰度席位",
+      "subject": "活动发布",
+      "state": "重复启动",
+      "invariant": "同一配置线最多一个活动发布",
+      "observable": "后到启动请求冲突",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "start",
+          "active"
+        ]
+      }
+    },
+    {
+      "id": "09-13",
+      "task_type": "部署运维",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "09-14",
+      "task_type": "部署运维",
+      "capability_family": "按协议取件",
+      "subject": "有效领取件",
+      "state": "未应用时重拉",
+      "invariant": "仍有效且目标一致就复用当前领取件",
+      "observable": "返回固定序号、内容和截止点",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "pull",
+          "_envelope"
+        ]
+      }
+    },
+    {
+      "id": "09-15",
+      "task_type": "部署运维",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "09-16",
+      "task_type": "部署运维",
+      "capability_family": "暂停和恢复取件",
+      "subject": "暂停端",
+      "state": "暂停期间",
+      "invariant": "既不签收未完成凭据也不新增领取",
+      "observable": "端从可领到暂停",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "change_pause",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "09-17",
+      "task_type": "部署运维",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      }
+    },
+    {
+      "id": "09-18",
+      "task_type": "部署运维",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "09-19",
+      "task_type": "部署运维",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "09-20",
+      "task_type": "部署运维",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "09-21",
+      "task_type": "部署运维",
+      "capability_family": "扩大与切稳",
+      "subject": "全量发布",
+      "state": "切稳前",
+      "invariant": "扩大期间仍需冻结全员确认",
+      "observable": "切稳后端可见稳定目标",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "advance",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "09-22",
+      "task_type": "部署运维",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "09-23",
+      "task_type": "部署运维",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "09-24",
+      "task_type": "部署运维",
+      "capability_family": "过期及应用拒绝",
+      "subject": "在途制品",
+      "state": "超过有效期",
+      "invariant": "新记回执必须在期限内",
+      "observable": "过期重领返回另一个序号",
+      "primary_mechanism": "time_semantics",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "09-26",
+      "task_type": "部署运维",
+      "capability_family": "并发持久写入",
+      "subject": "同一领取件",
+      "state": "并发确认",
+      "invariant": "回执主键不能双记",
+      "observable": "审计成功事件数不重复",
+      "primary_mechanism": "concurrency",
+      "workflow_ids": [
+        "concurrent-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/events.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/events.py"
+        ],
+        "functions": [
+          "accept",
+          "record"
+        ]
+      }
+    },
+    {
+      "id": "09-27",
+      "task_type": "部署运维",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "09-29",
+      "task_type": "部署运维",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    },
+    {
+      "id": "10-01",
+      "task_type": "泛Agent需求",
+      "capability_family": "登记兼容",
+      "subject": "协议选择",
+      "state": "新端登记",
+      "invariant": "稳态与相关发布均要守住协议表示能力",
+      "observable": "接口拒绝无法表示的版本",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/wire.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/wire.py"
+        ],
+        "functions": [
+          "_check_current_versions",
+          "compile_for"
+        ]
+      }
+    },
+    {
+      "id": "10-02",
+      "task_type": "泛Agent需求",
+      "capability_family": "登记兼容",
+      "subject": "端身份",
+      "state": "首次登记",
+      "invariant": "端名称只在配置线内唯一",
+      "observable": "新登记返回专属领取密钥",
+      "primary_mechanism": "resource_lifecycle",
+      "workflow_ids": [
+        "agent-enroll"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/channels.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/channels.py"
+        ],
+        "functions": [
+          "register",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "10-04",
+      "task_type": "泛Agent需求",
+      "capability_family": "编辑草稿",
+      "subject": "复制来源",
+      "state": "创建分支草稿",
+      "invariant": "来源在同条配置线内",
+      "observable": "草稿保有来源版引用",
+      "primary_mechanism": "lineage",
+      "workflow_ids": [
+        "draft-edit"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "create",
+          "get"
+        ]
+      }
+    },
+    {
+      "id": "10-05",
+      "task_type": "泛Agent需求",
+      "capability_family": "合成预览",
+      "subject": "标签规则",
+      "state": "部分标签命中",
+      "invariant": "所有标签条件同时匹配方可应用",
+      "observable": "预览显示实际命中规则",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/selectors.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/selectors.py"
+        ],
+        "functions": [
+          "resolve",
+          "matches"
+        ]
+      }
+    },
+    {
+      "id": "10-06",
+      "task_type": "泛Agent需求",
+      "capability_family": "合成预览",
+      "subject": "叠层可选字段",
+      "state": "删除后重设",
+      "invariant": "最终按层次合并结果校验",
+      "observable": "前置可选值不会错误保留",
+      "primary_mechanism": "delete_removal",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/rules.py",
+        "mantlecut/contract.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rules.py",
+          "mantlecut/contract.py"
+        ],
+        "functions": [
+          "resolve",
+          "enforce"
+        ]
+      }
+    },
+    {
+      "id": "10-07",
+      "task_type": "泛Agent需求",
+      "capability_family": "合成预览",
+      "subject": "叠层优先序",
+      "state": "叠层归并",
+      "invariant": "不同优先序始终按升序处理",
+      "observable": "预览返回固定命中序列",
+      "primary_mechanism": "ranking_reorder",
+      "workflow_ids": [
+        "layered-preview"
+      ],
+      "source_anchors": [
+        "mantlecut/selectors.py",
+        "mantlecut/revisions.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/selectors.py",
+          "mantlecut/revisions.py"
+        ],
+        "functions": [
+          "normalize_layers",
+          "preview"
+        ]
+      }
+    },
+    {
+      "id": "10-09",
+      "task_type": "泛Agent需求",
+      "capability_family": "封存前预检",
+      "subject": "草稿内容摘要",
+      "state": "封存后",
+      "invariant": "禁止编辑且内容摘要绑定封存内容",
+      "observable": "返回可用于后续发布的封存版",
+      "primary_mechanism": "export_freeze",
+      "workflow_ids": [
+        "seal-check"
+      ],
+      "source_anchors": [
+        "mantlecut/revisions.py",
+        "mantlecut/documents.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/revisions.py",
+          "mantlecut/documents.py"
+        ],
+        "functions": [
+          "seal",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "id": "10-10",
+      "task_type": "泛Agent需求",
+      "capability_family": "冻结灰度席位",
+      "subject": "试发席位",
+      "state": "试发创建",
+      "invariant": "筛取确定席位且同轮排名固定",
+      "observable": "席位展示固定排序",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "start",
+          "freeze"
+        ]
+      }
+    },
+    {
+      "id": "10-11",
+      "task_type": "泛Agent需求",
+      "capability_family": "冻结灰度席位",
+      "subject": "晚登记端",
+      "state": "试发进行中",
+      "invariant": "晚登记不插入冻结席位",
+      "observable": "端只领稳态或显示空闲",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "trial-roster"
+      ],
+      "source_anchors": [
+        "mantlecut/subscribers.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/subscribers.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "register",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "10-13",
+      "task_type": "泛Agent需求",
+      "capability_family": "按协议取件",
+      "subject": "协议制品",
+      "state": "两代同时运行",
+      "invariant": "旧端整秒新端毫秒且制品字节确定",
+      "observable": "可比较两种解码结果",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/wire.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/wire.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "encode",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "10-14",
+      "task_type": "泛Agent需求",
+      "capability_family": "按协议取件",
+      "subject": "有效领取件",
+      "state": "未应用时重拉",
+      "invariant": "仍有效且目标一致就复用当前领取件",
+      "observable": "返回固定序号、内容和截止点",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "pull",
+          "_envelope"
+        ]
+      }
+    },
+    {
+      "id": "10-15",
+      "task_type": "泛Agent需求",
+      "capability_family": "按协议取件",
+      "subject": "非试发席位",
+      "state": "试发期间",
+      "invariant": "不属于试发则继续稳态目标",
+      "observable": "取件所见发布标识仍为稳态",
+      "primary_mechanism": "policy_rules",
+      "workflow_ids": [
+        "wire-pull"
+      ],
+      "source_anchors": [
+        "mantlecut/targets.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/targets.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "for_node",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "10-17",
+      "task_type": "泛Agent需求",
+      "capability_family": "暂停和恢复取件",
+      "subject": "已冻结席位",
+      "state": "端暂停后",
+      "invariant": "原席位仍在分母内",
+      "observable": "阶段页继续显示阻挡端",
+      "primary_mechanism": "snapshot_consistency",
+      "workflow_ids": [
+        "pause-resume"
+      ],
+      "source_anchors": [
+        "mantlecut/cohorts.py",
+        "mantlecut/subscribers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/cohorts.py",
+          "mantlecut/subscribers.py"
+        ],
+        "functions": [
+          "status",
+          "change_pause"
+        ]
+      }
+    },
+    {
+      "id": "10-18",
+      "task_type": "泛Agent需求",
+      "capability_family": "签收与重送",
+      "subject": "成功回执",
+      "state": "目标切换后传输重试",
+      "invariant": "已记录的完全相同回执不当作新结果",
+      "observable": "返回重送标记",
+      "primary_mechanism": "idempotency",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "get_owned"
+        ]
+      }
+    },
+    {
+      "id": "10-19",
+      "task_type": "泛Agent需求",
+      "capability_family": "签收与重送",
+      "subject": "制品摘要",
+      "state": "首次提交",
+      "invariant": "摘要对应原字节",
+      "observable": "错误摘要无法更新应用结果",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "signed-receipt"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "accept",
+          "list_offers"
+        ]
+      }
+    },
+    {
+      "id": "10-20",
+      "task_type": "泛Agent需求",
+      "capability_family": "扩大与切稳",
+      "subject": "试发发布",
+      "state": "扩大前",
+      "invariant": "试发席位齐全才准扩大",
+      "observable": "阻挡端清除后阶段变化",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "advance",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "10-21",
+      "task_type": "泛Agent需求",
+      "capability_family": "扩大与切稳",
+      "subject": "全量发布",
+      "state": "切稳前",
+      "invariant": "扩大期间仍需冻结全员确认",
+      "observable": "切稳后端可见稳定目标",
+      "primary_mechanism": "state_machine",
+      "workflow_ids": [
+        "widen-settle"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "advance",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "10-22",
+      "task_type": "泛Agent需求",
+      "capability_family": "撤回与稳态补发",
+      "subject": "可能应用的端",
+      "state": "撤回后",
+      "invariant": "撤回的候选不再可领且需要可补稳态",
+      "observable": "同一端看到新的稳态领取件",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/rollout.py",
+        "mantlecut/offers.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/rollout.py",
+          "mantlecut/offers.py"
+        ],
+        "functions": [
+          "advance",
+          "pull"
+        ]
+      }
+    },
+    {
+      "id": "10-23",
+      "task_type": "泛Agent需求",
+      "capability_family": "撤回与稳态补发",
+      "subject": "未记回执",
+      "state": "旧目标失效",
+      "invariant": "旧目标凭据不能在新目标下成为成功依据",
+      "observable": "已撤回领取的首次回执冲突",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "withdraw"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/targets.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/targets.py"
+        ],
+        "functions": [
+          "accept",
+          "for_node"
+        ]
+      }
+    },
+    {
+      "id": "10-25",
+      "task_type": "泛Agent需求",
+      "capability_family": "过期及应用拒绝",
+      "subject": "拒绝回执",
+      "state": "协议端报告拒绝",
+      "invariant": "保留拒绝原因且不算成功应用",
+      "observable": "发布阻挡持续显示",
+      "primary_mechanism": "error_propagation",
+      "workflow_ids": [
+        "expire-reject"
+      ],
+      "source_anchors": [
+        "mantlecut/receipts.py",
+        "mantlecut/cohorts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/receipts.py",
+          "mantlecut/cohorts.py"
+        ],
+        "functions": [
+          "accept",
+          "status"
+        ]
+      }
+    },
+    {
+      "id": "10-27",
+      "task_type": "泛Agent需求",
+      "capability_family": "审计翻页",
+      "subject": "事件游标",
+      "state": "有后续写入",
+      "invariant": "以持久事件号选更早记录",
+      "observable": "翻页不重复已读事件",
+      "primary_mechanism": "versioning_audit",
+      "workflow_ids": [
+        "audit-cursor"
+      ],
+      "source_anchors": [
+        "mantlecut/events.py",
+        "mantlecut/inspection.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/events.py",
+          "mantlecut/inspection.py"
+        ],
+        "functions": [
+          "list_events",
+          "audit_page"
+        ]
+      }
+    },
+    {
+      "id": "10-29",
+      "task_type": "泛Agent需求",
+      "capability_family": "服务重开",
+      "subject": "尚未回执的制品",
+      "state": "进程重开",
+      "invariant": "当前领取与阶段不依赖进程内存",
+      "observable": "重开后可完成原领取",
+      "primary_mechanism": "recovery_rollback",
+      "workflow_ids": [
+        "reopen"
+      ],
+      "source_anchors": [
+        "mantlecut/offers.py",
+        "mantlecut/receipts.py"
+      ],
+      "existing_touch_points": {
+        "files": [
+          "mantlecut/offers.py",
+          "mantlecut/receipts.py"
+        ],
+        "functions": [
+          "pull",
+          "accept"
+        ]
+      }
+    }
+  ]
+}
